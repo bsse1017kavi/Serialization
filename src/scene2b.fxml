@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="filePackage.Menu">
+   <children>
+      <Text layoutX="93.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration No." />
+      <TextField fx:id="tfb1" layoutX="255.0" layoutY="77.0" />
+      <Text layoutX="93.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Session" />
+      <Text layoutX="93.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semester" />
+      <Text layoutX="93.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year" />
+      <Text layoutX="93.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="cgpa" />
+      <Text layoutX="93.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Roll" />
+      <TextField fx:id="tfb2" layoutX="255.0" layoutY="107.0" />
+      <TextField fx:id="tfb3" layoutX="255.0" layoutY="137.0" />
+      <TextField fx:id="tfb4" layoutX="255.0" layoutY="173.0" />
+      <TextField fx:id="tfb5" layoutX="255.0" layoutY="210.0" />
+      <TextField fx:id="tfb6" layoutX="255.0" layoutY="241.0" />
+      <Button layoutX="455.0" layoutY="333.0" mnemonicParsing="false" onAction="#insert_academic" text="Submit" />
+   </children>
+</AnchorPane>
