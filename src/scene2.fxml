@@ -3,9 +3,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="filepackage.Scene2Controller">
    <children>
-      <Button layoutX="257.0" layoutY="129.0" mnemonicParsing="false" scaleX="2.0" scaleY="2.0" text="Personal Info" />
-      <Button layoutX="260.0" layoutY="237.0" mnemonicParsing="false" scaleX="2.0" scaleY="2.0" text="Academic Info" />
+      <Button layoutX="257.0" layoutY="129.0" mnemonicParsing="false" onAction="#scene_forward_personal" scaleX="2.0" scaleY="2.0" text="Personal Info" />
+      <Button layoutX="260.0" layoutY="249.0" mnemonicParsing="false" onAction="#scene_forward_academic" scaleX="2.0" scaleY="2.0" text="Academic Info" />
    </children>
 </AnchorPane>
