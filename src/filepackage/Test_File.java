@@ -19,16 +19,14 @@ public class Test_File {
 
     private String FILENAME = "academic.txt";
 
-    public void  writeToFile_BufferWriter() {
+    public void  writeToFile_BufferWriter_academic(String content) {
         BufferedWriter bw = null;
         FileWriter fw = null;
 
         try {
 
-            String content = JOptionPane.showInputDialog("Write about BSSE08");
-
             //open filewriter as write mode
-            fw = new FileWriter(FILENAME);
+            fw = new FileWriter(FILENAME,true);
 
             //open filewriter as append mode
 //			fw = new FileWriter(FILENAME, true);
@@ -37,7 +35,38 @@ public class Test_File {
             bw = new BufferedWriter(fw);
             bw.flush();
 
-            bw.write(content);
+            bw.write("\n"+content);
+
+            System.out.println("Write Done" + content);
+
+            if (bw != null)
+                bw.close();
+
+            if (fw != null)
+                fw.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void  writeToFile_BufferWriter_personal(String content) {
+        BufferedWriter bw = null;
+        FileWriter fw = null;
+
+        try {
+
+            //open filewriter as write mode
+            fw = new FileWriter("personal.txt",true);
+
+            //open filewriter as append mode
+//			fw = new FileWriter(FILENAME, true);
+
+
+            bw = new BufferedWriter(fw);
+            bw.flush();
+
+            bw.write("\n"+content);
 
             System.out.println("Write Done" + content);
 
